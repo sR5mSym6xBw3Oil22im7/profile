@@ -28,7 +28,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#learning">Learning</a>
-        <a href="#contact">Contact</a>
+        <a href="#portfolio">Portfolio</a>
       </nav>
     </div>
   </header>
@@ -94,7 +94,7 @@
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section section-dark" id="about">
       <div class="container two-column">
         <div class="section-heading reveal">
           <p class="eyebrow">About Me</p>
@@ -118,7 +118,7 @@
       </div>
     </section>
 
-    <section class="section section-light" id="career">
+    <section class="section section-dark" id="career">
       <div class="container">
         <div class="section-heading center reveal">
           <p class="eyebrow">Career Summary</p>
@@ -173,7 +173,7 @@
       </div>
     </section>
 
-    <section class="section" id="skills">
+    <section class="section section-dark" id="skills">
       <div class="container">
         <div class="section-heading center reveal">
           <p class="eyebrow">Skills</p>
@@ -220,7 +220,7 @@
       </div>
     </section>
 
-    <section class="section section-light" id="experience">
+    <section class="section section-dark" id="experience">
       <div class="container">
         <div class="section-heading center reveal">
           <p class="eyebrow">Featured Experience</p>
@@ -293,53 +293,41 @@
       </div>
     </section>
 
-    <section class="section" id="portfolio">
-      <div class="container two-column">
+    <section class="section section-dark" id="portfolio">
+      <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">Portfolio Demo</p>
-          <h2>このサイトについて</h2>
+          <p class="eyebrow">Portfolio</p>
+          <h2>制作実績（デモ）</h2>
+          <p class="section-lead">実務でのスキルを示す小さなデモを掲載しています。以下のプロジェクトは生成AIを活用して約3時間で作成しました。</p>
         </div>
-        <div class="content-card reveal">
-          <dl class="project-list">
-            <div>
-              <dt>使用技術</dt>
-              <dd>HTML / CSS / JavaScript</dd>
-            </div>
-            <div>
-              <dt>工夫した点</dt>
-              <dd>職務経歴を面接で説明しやすい構成に整理し、GitHub公開を想定して個人情報を最小限にしています。</dd>
-            </div>
-            <div>
-              <dt>JavaScript機能</dt>
-              <dd>スキルフィルター、経歴カードの開閉、スクロールアニメーション、トップへ戻るボタン。</dd>
-            </div>
-          </dl>
+
+        <div class="project-grid reveal">
+          <article class="project-card">
+            <h3>電卓デモ（Calc）</h3>
+            <p>シンプルな電卓アプリ。HTML/CSS/JavaScriptで実装し、基本的な四則演算とクリア機能を備えています。</p>
+            <p class="meta">制作時間: 約3時間（生成AI活用）</p>
+            <p><a href="https://sr5msym6xbw3oil22im7.github.io/calc/" target="_blank" rel="noopener noreferrer">表示・実行する</a></p>
+          </article>
+
+          <article class="project-card">
+            <h3>サイコロゲーム（Dice Game Rev2）</h3>
+            <p>ランダムなサイコロ目で勝敗を判定するミニゲーム。UIの操作性とランダム処理の実装を確認できます。</p>
+            <p class="meta">制作時間: 約3時間（生成AI活用）</p>
+            <p><a href="https://sr5msym6xbw3oil22im7.github.io/dice_game_rev2/" target="_blank" rel="noopener noreferrer">表示・実行する</a></p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-light" id="contact">
-      <div class="container contact-card reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>GitHubで公開予定</h2>
-        <p>
-          公開用ポートフォリオのため、住所・電話番号・生年月日などの個人情報は掲載していません。
-          必要に応じてGitHub URLやメールアドレスを追記してください。
-        </p>
-        <div class="contact-actions">
-          <a class="button primary" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHubを開く</a>
-          <a class="button ghost dark" href="#top">トップへ戻る</a>
-        </div>
-      </div>
-    </section>
+    <!-- Contact セクションは削除しました。Portfolio に制作実績を記載しています。 -->
   </main>
 
   <button class="back-to-top" type="button" aria-label="ページ上部へ戻る">↑</button>
 
   <footer class="site-footer">
     <div class="container footer-inner">
+      <p></p>
       <p>&copy; 2026 YAMANAKA YUJI Portfolio</p>
-      <p>HTML / CSS / JavaScript</p>
     </div>
   </footer>
 
