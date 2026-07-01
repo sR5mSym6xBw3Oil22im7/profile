@@ -842,3 +842,158 @@ h3 {
     width: 100%;
   }
 }
+
+
+/* ==========================================================
+   Theme Variant: 08 Navy Gold
+   Created from profile_20260702.zip. Color changes only.
+   ========================================================== */
+:root {
+  --navy: #111827;
+  --navy-soft: #1F2937;
+  --card: #101827;
+  --text: #F8FAFC;
+  --text-soft: #E5E7EB;
+  --white: #F8FAFC;
+  --muted: #B6C2D2;
+  --line: rgba(229, 231, 235, 0.10);
+  --accent: #FBBF24;
+  --accent-strong: #D97706;
+  --accent-soft: #FDE68A;
+  --accent-contrast: #111827;
+  --bg: #0B1324;
+  --bg-soft: #111827;
+  --shadow: 0 22px 60px rgba(2, 6, 23, 0.30);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  background: rgba(17, 24, 39, 0.92);
+  border-bottom-color: rgba(229, 231, 235, 0.10);
+}
+
+.logo-mark {
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  color: var(--accent-contrast);
+}
+
+.section-dark {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(251, 191, 36, 0.22), transparent 34%),
+    linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 55%, #1E3A8A 100%);
+}
+
+.section-dark-soft {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.section-light {
+  background: var(--bg-soft);
+}
+
+.hero-lead,
+.section-lead,
+.summary-card p,
+.learning-card p,
+.learning-card li,
+.terminal-body ul,
+.timeline-item p,
+.project-list dd,
+.project-card .meta {
+  color: var(--muted);
+}
+
+.content-card,
+.project-card,
+.accordion-card,
+.timeline-item,
+.summary-card,
+.learning-card,
+.contact-card,
+.terminal-card {
+  background: var(--card);
+  color: var(--text);
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+.summary-card,
+.learning-card {
+  background: var(--card-soft);
+}
+
+.terminal-card {
+  background: rgba(16, 24, 39, 0.86);
+}
+
+.terminal-bar {
+  background: rgba(17, 24, 39, 0.96);
+  border-bottom-color: var(--line);
+}
+
+.terminal-body {
+  color: var(--text);
+}
+
+.button.primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  box-shadow: 0 14px 30px rgba(251, 191, 36, 0.28);
+}
+
+.button.primary:hover,
+.button.primary:focus-visible,
+.accordion-card.open .plus {
+  background: var(--accent-soft);
+  color: var(--accent-contrast);
+}
+
+.button.ghost {
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.filter-button,
+.skill-tag,
+.accordion-trigger {
+  background: var(--card);
+  color: var(--text-soft);
+  border-color: var(--line);
+}
+
+.filter-button.active,
+.filter-button:hover,
+.filter-button:focus-visible {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+.plus {
+  background: var(--bg-soft);
+  color: var(--accent-strong);
+}
+
+.timeline-item::after {
+  background: var(--accent);
+  border-color: var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.back-to-top,
+.site-footer {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .global-nav {
+    background: rgba(17, 24, 39, 0.98);
+  }
+}
