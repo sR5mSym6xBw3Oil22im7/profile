@@ -647,17 +647,19 @@ h3 {
 
 /* Portfolio project cards */
 .project-grid {
-  display: table;
+  display: grid;
   width: 100%;
-  table-layout: fixed;
-  border-spacing: 24px 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
   margin-top: 18px;
+  align-items: stretch;
 }
 
 .project-card {
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 22px;
-  vertical-align: top;
   border: 1px solid var(--line);
   border-radius: var(--radius-medium);
   background: var(--bg);
@@ -669,11 +671,8 @@ h3 {
 }
 
 .project-card > p:nth-of-type(1) {
-  min-height: 4.8em;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  margin: 0;
+  min-height: 7.2em;
 }
 
 .project-card .meta {
@@ -698,6 +697,11 @@ h3 {
 .project-tech--long {
   min-height: 6.4em;
   -webkit-line-clamp: 4;
+}
+
+.project-card > p:last-of-type {
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .contact-card {
@@ -820,7 +824,6 @@ h3 {
   .project-grid {
     display: grid;
     grid-template-columns: 1fr;
-    border-spacing: 0;
   }
 
   .hero {
