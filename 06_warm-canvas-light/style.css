@@ -883,25 +883,26 @@ h3 {
 
 
 /* ==========================================================
-   Theme Variant: 03 Professional Indigo
+   Theme Variant: 06 Warm Canvas Light
    Created from profile_20260702.zip. Color changes only.
    ========================================================== */
 :root {
-  --navy: #1E1B4B;
-  --navy-soft: #27235E;
-  --card: #17172F;
-  --text: #F8FAFC;
-  --text-soft: #DDD6FE;
-  --white: #F8FAFC;
-  --muted: #B8B5DE;
-  --line: rgba(221, 214, 254, 0.10);
-  --accent: #818CF8;
-  --accent-strong: #6366F1;
-  --accent-soft: #C4B5FD;
-  --accent-contrast: #111827;
-  --bg: #111827;
-  --bg-soft: #1E1B4B;
-  --shadow: 0 22px 60px rgba(17, 24, 39, 0.30);
+  --navy: #FFF1E7;
+  --navy-soft: #FFE4D1;
+  --card: #FFFFFF;
+  --card-soft: #FFFCF8;
+  --text: #1F2937;
+  --text-soft: #4B5563;
+  --white: #1F2937;
+  --muted: #6B7280;
+  --line: rgba(249, 115, 22, 0.10);
+  --accent: #F97316;
+  --accent-strong: #EA580C;
+  --accent-soft: #FDBA74;
+  --accent-contrast: #FFFFFF;
+  --bg: #FFF8F1;
+  --bg-soft: #FFEDD5;
+  --shadow: 0 22px 60px rgba(249, 115, 22, 0.12);
 }
 
 body {
@@ -910,7 +911,7 @@ body {
 }
 
 .site-header {
-  background: rgba(30, 27, 75, 0.92);
+  background: rgba(30, 27, 58, 0.92);
   border-bottom-color: rgba(221, 214, 254, 0.10);
 }
 
@@ -922,8 +923,8 @@ body {
 .section-dark {
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(129, 140, 248, 0.22), transparent 34%),
-    linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 55%, #312E81 100%);
+    radial-gradient(circle at top left, rgba(167, 139, 250, 0.22), transparent 34%),
+    linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 55%, #4C1D95 100%);
 }
 
 .section-dark-soft {
@@ -967,11 +968,11 @@ body {
 }
 
 .terminal-card {
-  background: rgba(23, 23, 47, 0.86);
+  background: rgba(25, 21, 46, 0.86);
 }
 
 .terminal-bar {
-  background: rgba(30, 27, 75, 0.96);
+  background: rgba(30, 27, 58, 0.96);
   border-bottom-color: var(--line);
 }
 
@@ -982,7 +983,7 @@ body {
 .button.primary {
   background: var(--accent);
   color: var(--accent-contrast);
-  box-shadow: 0 14px 30px rgba(129, 140, 248, 0.28);
+  box-shadow: 0 14px 30px rgba(167, 139, 250, 0.28);
 }
 
 .button.primary:hover,
@@ -1032,6 +1033,6 @@ body {
 
 @media (max-width: 900px) {
   .global-nav {
-    background: rgba(30, 27, 75, 0.98);
+    background: rgba(30, 27, 58, 0.98);
   }
 }

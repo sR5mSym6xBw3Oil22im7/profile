@@ -3,190 +3,311 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>テーマカラー10案プレビュー</title>
+  <title>テーマカラー一覧</title>
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #0f172a; background: #f8fafc; line-height: 1.7; }
-    .wrap { width: min(100% - 40px, 1180px); margin: 0 auto; padding: 48px 0; }
-    header { margin-bottom: 28px; }
-    h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.15; }
-    .lead { margin: 0; color: #475569; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-    .theme-card { display: grid; gap: 12px; padding: 22px; border: 1px solid #e2e8f0; border-radius: 22px; background: #fff; box-shadow: 0 18px 45px rgba(15, 23, 42, .08); }
-    .swatches { display: grid; grid-template-columns: repeat(3, 1fr); height: 64px; overflow: hidden; border-radius: 16px; border: 1px solid #e2e8f0; }
-    .swatches span { display: block; }
-    .number { margin: 4px 0 0; color: #2563eb; font-weight: 800; }
-    h2 { margin: 0; font-size: 1.35rem; }
-    p { margin: 0; }
-    dl { display: grid; gap: 6px; margin: 0; color: #475569; font-size: .94rem; }
-    dl div { display: flex; gap: 10px; }
-    dt { width: 72px; font-weight: 800; }
-    dd { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    a { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; margin-top: 6px; padding: 0 18px; border-radius: 999px; background: #0f172a; color: #fff; text-decoration: none; font-weight: 800; }
-    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+    :root {
+      --bg: #0b1221;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --card: #111827;
+      --border: rgba(226, 232, 240, 0.08);
+      --shadow: 0 18px 45px rgba(2, 6, 23, 0.32);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(124, 58, 237, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.14), transparent 24%),
+        var(--bg);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      width: min(100% - 40px, 1180px);
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.15;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      max-width: 72ch;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .theme-card {
+      display: grid;
+      gap: 12px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: 64px;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .swatches span {
+      display: block;
+    }
+
+    .number {
+      margin: 4px 0 0;
+      color: #7c3aed;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    dl {
+      display: grid;
+      gap: 6px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    dl div {
+      display: flex;
+      gap: 10px;
+    }
+
+    dt {
+      width: 72px;
+      font-weight: 800;
+    }
+
+    dd {
+      margin: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 44px;
+      margin-top: 6px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22);
+    }
+
+    a:hover,
+    a:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.28);
+    }
+
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <header>
-      <h1>テーマカラー10案プレビュー</h1>
-      <p class="lead">各カードの「このテーマを開く」から、色変更済みのHTMLを確認できます。</p>
+      <h1>テーマカラー一覧</h1>
+      <p class="lead">背景、カード、アクセントの3色だけを変えた 10 種類の配色案です。</p>
     </header>
-    <section class="grid" aria-label="テーマカラー一覧">
-      
+
+    <section class="grid" aria-label="テーマ配色一覧">
       <article class="theme-card">
-        <div class="swatches" aria-label="Tech Blue color swatches">
-          <span style="background:#0B1221"></span>
-          <span style="background:#0F172A"></span>
-          <span style="background:#38BDF8"></span>
-        </div>
-        <p class="number">案1</p>
-        <h2>Tech Blue</h2>
-        <p>現在の雰囲気を活かした、IT感・清潔感・先進性のあるブルー系。</p>
-        <dl>
-          <div><dt>背景</dt><dd>#0B1221</dd></div>
-          <div><dt>カード</dt><dd>#0F172A</dd></div>
-          <div><dt>アクセント</dt><dd>#38BDF8</dd></div>
-        </dl>
-        <a href="01_tech-blue/index.html">このテーマを開く</a>
-      </article>
-      <article class="theme-card">
-        <div class="swatches" aria-label="Emerald Infrastructure color swatches">
-          <span style="background:#071A16"></span>
-          <span style="background:#0C1F1A"></span>
-          <span style="background:#10B981"></span>
-        </div>
-        <p class="number">案2</p>
-        <h2>Emerald Infrastructure</h2>
-        <p>サーバ・インフラ志向に合う、安定感・信頼感・堅実さを出すグリーン系。</p>
-        <dl>
-          <div><dt>背景</dt><dd>#071A16</dd></div>
-          <div><dt>カード</dt><dd>#0C1F1A</dd></div>
-          <div><dt>アクセント</dt><dd>#10B981</dd></div>
-        </dl>
-        <a href="02_emerald-infrastructure/index.html">このテーマを開く</a>
-      </article>
-      <article class="theme-card">
-        <div class="swatches" aria-label="Professional Indigo color swatches">
-          <span style="background:#111827"></span>
-          <span style="background:#17172F"></span>
-          <span style="background:#818CF8"></span>
-        </div>
-        <p class="number">案3</p>
-        <h2>Professional Indigo</h2>
-        <p>知的で落ち着いた印象を与える、面接用にも使いやすいインディゴ系。</p>
-        <dl>
-          <div><dt>背景</dt><dd>#111827</dd></div>
-          <div><dt>カード</dt><dd>#17172F</dd></div>
-          <div><dt>アクセント</dt><dd>#818CF8</dd></div>
-        </dl>
-        <a href="03_professional-indigo/index.html">このテーマを開く</a>
-      </article>
-      <article class="theme-card">
-        <div class="swatches" aria-label="Warm Career Orange color swatches">
-          <span style="background:#1C1917"></span>
-          <span style="background:#241F1C"></span>
-          <span style="background:#F59E0B"></span>
-        </div>
-        <p class="number">案4</p>
-        <h2>Warm Career Orange</h2>
-        <p>親しみやすさと実務感を出す、温かいオレンジ系。</p>
-        <dl>
-          <div><dt>背景</dt><dd>#1C1917</dd></div>
-          <div><dt>カード</dt><dd>#241F1C</dd></div>
-          <div><dt>アクセント</dt><dd>#F59E0B</dd></div>
-        </dl>
-        <a href="04_warm-career-orange/index.html">このテーマを開く</a>
-      </article>
-      <article class="theme-card">
-        <div class="swatches" aria-label="Monochrome Silver color swatches">
-          <span style="background:#0A0A0A"></span>
-          <span style="background:#111113"></span>
-          <span style="background:#A1A1AA"></span>
-        </div>
-        <p class="number">案5</p>
-        <h2>Monochrome Silver</h2>
-        <p>装飾を抑えた、シンプル・大人っぽいモノクローム系。</p>
-        <dl>
-          <div><dt>背景</dt><dd>#0A0A0A</dd></div>
-          <div><dt>カード</dt><dd>#111113</dd></div>
-          <div><dt>アクセント</dt><dd>#A1A1AA</dd></div>
-        </dl>
-        <a href="05_monochrome-silver/index.html">このテーマを開く</a>
-      </article>
-      <article class="theme-card">
-        <div class="swatches" aria-label="Deep Violet AI color swatches">
+        <div class="swatches" aria-label="Deep Violet AI の色見本">
           <span style="background:#120F24"></span>
           <span style="background:#19152E"></span>
           <span style="background:#A78BFA"></span>
         </div>
-        <p class="number">案6</p>
+        <p class="number">01</p>
         <h2>Deep Violet AI</h2>
-        <p>AI・学習・先端技術の印象を強める、深いバイオレット系。</p>
         <dl>
           <div><dt>背景</dt><dd>#120F24</dd></div>
           <div><dt>カード</dt><dd>#19152E</dd></div>
           <div><dt>アクセント</dt><dd>#A78BFA</dd></div>
         </dl>
-        <a href="06_deep-violet-ai/index.html">このテーマを開く</a>
+        <a href="01_deep-violet-ai/index.html">このテーマを開く</a>
       </article>
+
       <article class="theme-card">
-        <div class="swatches" aria-label="Forest Mint color swatches">
-          <span style="background:#061711"></span>
-          <span style="background:#0A2118"></span>
-          <span style="background:#34D399"></span>
+        <div class="swatches" aria-label="Lilac Cloud Light の色見本">
+          <span style="background:#F7F4FF"></span>
+          <span style="background:#FFFFFF"></span>
+          <span style="background:#7C3AED"></span>
         </div>
-        <p class="number">案7</p>
-        <h2>Forest Mint</h2>
-        <p>落ち着き・成長・継続学習を表現する、森のようなミントグリーン系。</p>
+        <p class="number">02</p>
+        <h2>Lilac Cloud Light</h2>
         <dl>
-          <div><dt>背景</dt><dd>#061711</dd></div>
-          <div><dt>カード</dt><dd>#0A2118</dd></div>
-          <div><dt>アクセント</dt><dd>#34D399</dd></div>
+          <div><dt>背景</dt><dd>#F7F4FF</dd></div>
+          <div><dt>カード</dt><dd>#FFFFFF</dd></div>
+          <div><dt>アクセント</dt><dd>#7C3AED</dd></div>
         </dl>
-        <a href="07_forest-mint/index.html">このテーマを開く</a>
+        <a href="02_lilac-cloud-light/index.html">このテーマを開く</a>
       </article>
+
       <article class="theme-card">
-        <div class="swatches" aria-label="Navy Gold color swatches">
-          <span style="background:#0B1324"></span>
-          <span style="background:#101827"></span>
-          <span style="background:#FBBF24"></span>
+        <div class="swatches" aria-label="Midnight Azure Dark の色見本">
+          <span style="background:#08162E"></span>
+          <span style="background:#101D39"></span>
+          <span style="background:#60A5FA"></span>
         </div>
-        <p class="number">案8</p>
-        <h2>Navy Gold</h2>
-        <p>実績感・信頼性・少し高級感を出す、ネイビー×ゴールド系。</p>
+        <p class="number">03</p>
+        <h2>Midnight Azure Dark</h2>
         <dl>
-          <div><dt>背景</dt><dd>#0B1324</dd></div>
-          <div><dt>カード</dt><dd>#101827</dd></div>
-          <div><dt>アクセント</dt><dd>#FBBF24</dd></div>
+          <div><dt>背景</dt><dd>#08162E</dd></div>
+          <div><dt>カード</dt><dd>#101D39</dd></div>
+          <div><dt>アクセント</dt><dd>#60A5FA</dd></div>
         </dl>
-        <a href="08_navy-gold/index.html">このテーマを開く</a>
+        <a href="03_midnight-azure-dark/index.html">このテーマを開く</a>
       </article>
+
       <article class="theme-card">
-        <div class="swatches" aria-label="Graphite Rose color swatches">
+        <div class="swatches" aria-label="Sky Mist Light の色見本">
+          <span style="background:#F4F8FB"></span>
+          <span style="background:#FFFFFF"></span>
+          <span style="background:#0EA5E9"></span>
+        </div>
+        <p class="number">04</p>
+        <h2>Sky Mist Light</h2>
+        <dl>
+          <div><dt>背景</dt><dd>#F4F8FB</dd></div>
+          <div><dt>カード</dt><dd>#FFFFFF</dd></div>
+          <div><dt>アクセント</dt><dd>#0EA5E9</dd></div>
+        </dl>
+        <a href="04_sky-mist-light/index.html">このテーマを開く</a>
+      </article>
+
+      <article class="theme-card">
+        <div class="swatches" aria-label="Graphite Night の色見本">
+          <span style="background:#111111"></span>
+          <span style="background:#1C1C1C"></span>
+          <span style="background:#A855F7"></span>
+        </div>
+        <p class="number">05</p>
+        <h2>Graphite Night</h2>
+        <dl>
+          <div><dt>背景</dt><dd>#111111</dd></div>
+          <div><dt>カード</dt><dd>#1C1C1C</dd></div>
+          <div><dt>アクセント</dt><dd>#A855F7</dd></div>
+        </dl>
+        <a href="05_graphite-night/index.html">このテーマを開く</a>
+      </article>
+
+      <article class="theme-card">
+        <div class="swatches" aria-label="Warm Canvas Light の色見本">
+          <span style="background:#FFF8F1"></span>
+          <span style="background:#FFFFFF"></span>
+          <span style="background:#F97316"></span>
+        </div>
+        <p class="number">06</p>
+        <h2>Warm Canvas Light</h2>
+        <dl>
+          <div><dt>背景</dt><dd>#FFF8F1</dd></div>
+          <div><dt>カード</dt><dd>#FFFFFF</dd></div>
+          <div><dt>アクセント</dt><dd>#F97316</dd></div>
+        </dl>
+        <a href="06_warm-canvas-light/index.html">このテーマを開く</a>
+      </article>
+
+      <article class="theme-card">
+        <div class="swatches" aria-label="Forest Mint Dark の色見本">
+          <span style="background:#10211C"></span>
+          <span style="background:#183028"></span>
+          <span style="background:#22C55E"></span>
+        </div>
+        <p class="number">07</p>
+        <h2>Forest Mint Dark</h2>
+        <dl>
+          <div><dt>背景</dt><dd>#10211C</dd></div>
+          <div><dt>カード</dt><dd>#183028</dd></div>
+          <div><dt>アクセント</dt><dd>#22C55E</dd></div>
+        </dl>
+        <a href="07_forest-mint-dark/index.html">このテーマを開く</a>
+      </article>
+
+      <article class="theme-card">
+        <div class="swatches" aria-label="Aqua Breeze Light の色見本">
+          <span style="background:#F7FAF7"></span>
+          <span style="background:#FFFFFF"></span>
+          <span style="background:#10B981"></span>
+        </div>
+        <p class="number">08</p>
+        <h2>Aqua Breeze Light</h2>
+        <dl>
+          <div><dt>背景</dt><dd>#F7FAF7</dd></div>
+          <div><dt>カード</dt><dd>#FFFFFF</dd></div>
+          <div><dt>アクセント</dt><dd>#10B981</dd></div>
+        </dl>
+        <a href="08_aqua-breeze-light/index.html">このテーマを開く</a>
+      </article>
+
+      <article class="theme-card">
+        <div class="swatches" aria-label="Rose Graphite Dark の色見本">
           <span style="background:#111113"></span>
           <span style="background:#181416"></span>
           <span style="background:#FB7185"></span>
         </div>
-        <p class="number">案9</p>
-        <h2>Graphite Rose</h2>
-        <p>印象に残りやすく、少しクリエイティブな雰囲気のグラファイト×ローズ系。</p>
+        <p class="number">09</p>
+        <h2>Rose Graphite Dark</h2>
         <dl>
           <div><dt>背景</dt><dd>#111113</dd></div>
           <div><dt>カード</dt><dd>#181416</dd></div>
           <div><dt>アクセント</dt><dd>#FB7185</dd></div>
         </dl>
-        <a href="09_graphite-rose/index.html">このテーマを開く</a>
+        <a href="09_rose-graphite-dark/index.html">このテーマを開く</a>
       </article>
+
       <article class="theme-card">
-        <div class="swatches" aria-label="Clean Corporate Light color swatches">
+        <div class="swatches" aria-label="Clean Corporate Light の色見本">
           <span style="background:#F8FAFC"></span>
           <span style="background:#FFFFFF"></span>
           <span style="background:#2563EB"></span>
         </div>
-        <p class="number">案10</p>
+        <p class="number">10</p>
         <h2>Clean Corporate Light</h2>
-        <p>明るく誠実な企業サイト風。ダークテーマから大きく印象を変えるライト系。</p>
         <dl>
           <div><dt>背景</dt><dd>#F8FAFC</dd></div>
           <div><dt>カード</dt><dd>#FFFFFF</dd></div>

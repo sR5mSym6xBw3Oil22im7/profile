@@ -883,25 +883,26 @@ h3 {
 
 
 /* ==========================================================
-   Theme Variant: 05 Monochrome Silver
+   Theme Variant: 05 Graphite Night
    Created from profile_20260702.zip. Color changes only.
    ========================================================== */
 :root {
-  --navy: #18181B;
-  --navy-soft: #232326;
-  --card: #111113;
+  --navy: #191919;
+  --navy-soft: #232323;
+  --card: #1C1C1C;
+  --card-soft: #242424;
   --text: #FAFAFA;
   --text-soft: #D4D4D8;
   --white: #FAFAFA;
   --muted: #A1A1AA;
-  --line: rgba(244, 244, 245, 0.10);
-  --accent: #A1A1AA;
-  --accent-strong: #E4E4E7;
-  --accent-soft: #D4D4D8;
-  --accent-contrast: #0A0A0A;
-  --bg: #0A0A0A;
-  --bg-soft: #18181B;
-  --shadow: 0 22px 60px rgba(0, 0, 0, 0.32);
+  --line: rgba(255, 255, 255, 0.08);
+  --accent: #A855F7;
+  --accent-strong: #9333EA;
+  --accent-soft: #C084FC;
+  --accent-contrast: #111111;
+  --bg: #111111;
+  --bg-soft: #171717;
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.36);
 }
 
 body {

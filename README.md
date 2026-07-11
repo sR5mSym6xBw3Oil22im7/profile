@@ -1,22 +1,67 @@
-# テーマカラー10案
+# テーマカラー 10 案
 
-添付HTML一式をもとに、テーマカラーを10種類作成しました。
-元ファイルは上書きせず、各テーマごとにフォルダを分けています。
+ルートの `index.html` を開くと、10 種類のテーマ一覧を確認できます。  
+各テーマは個別フォルダに分かれており、配色は「背景」「カード」「アクセント」の 3 色だけを変更しています。  
+一覧ページと各テーマページは日本語表記にそろえています。
+
+## 更新内容
+
+- `Career Summary` の文言を「Web開発を通じて生成AIに関する知識を身につけ、実務経験と組み合わせた新たなキャリアを目指す。」に更新しました。
 
 ## 確認方法
 
-1. `index.html` を開くと、10案の色見本とリンクを一覧で確認できます。
-2. 各テーマフォルダ内の `index.html` を開くと、そのテーマを適用したページを確認できます。
+1. ルートの [index.html](/D:/programing/profile/index.html) を開く
+2. 各フォルダ内の [index.html](/D:/programing/profile/01_deep-violet-ai/index.html) などを開く
 
 ## テーマ一覧
 
-- 案1: Tech Blue / 背景 #0B1221 / カード #0F172A / アクセント #38BDF8
-- 案2: Emerald Infrastructure / 背景 #071A16 / カード #0C1F1A / アクセント #10B981
-- 案3: Professional Indigo / 背景 #111827 / カード #17172F / アクセント #818CF8
-- 案4: Warm Career Orange / 背景 #1C1917 / カード #241F1C / アクセント #F59E0B
-- 案5: Monochrome Silver / 背景 #0A0A0A / カード #111113 / アクセント #A1A1AA
-- 案6: Deep Violet AI / 背景 #120F24 / カード #19152E / アクセント #A78BFA
-- 案7: Forest Mint / 背景 #061711 / カード #0A2118 / アクセント #34D399
-- 案8: Navy Gold / 背景 #0B1324 / カード #101827 / アクセント #FBBF24
-- 案9: Graphite Rose / 背景 #111113 / カード #181416 / アクセント #FB7185
-- 案10: Clean Corporate Light / 背景 #F8FAFC / カード #FFFFFF / アクセント #2563EB
+1. Deep Violet AI
+   - フォルダ: `01_deep-violet-ai`
+   - 背景: `#120F24`
+   - カード: `#19152E`
+   - アクセント: `#A78BFA`
+2. Lilac Cloud Light
+   - フォルダ: `02_lilac-cloud-light`
+   - 背景: `#F7F4FF`
+   - カード: `#FFFFFF`
+   - アクセント: `#7C3AED`
+3. Midnight Azure Dark
+   - フォルダ: `03_midnight-azure-dark`
+   - 背景: `#08162E`
+   - カード: `#101D39`
+   - アクセント: `#60A5FA`
+4. Sky Mist Light
+   - フォルダ: `04_sky-mist-light`
+   - 背景: `#F4F8FB`
+   - カード: `#FFFFFF`
+   - アクセント: `#0EA5E9`
+5. Graphite Night
+   - フォルダ: `05_graphite-night`
+   - 背景: `#111111`
+   - カード: `#1C1C1C`
+   - アクセント: `#A855F7`
+6. Warm Canvas Light
+   - フォルダ: `06_warm-canvas-light`
+   - 背景: `#FFF8F1`
+   - カード: `#FFFFFF`
+   - アクセント: `#F97316`
+7. Forest Mint Dark
+   - フォルダ: `07_forest-mint-dark`
+   - 背景: `#10211C`
+   - カード: `#183028`
+   - アクセント: `#22C55E`
+8. Aqua Breeze Light
+   - フォルダ: `08_aqua-breeze-light`
+   - 背景: `#F7FAF7`
+   - カード: `#FFFFFF`
+   - アクセント: `#10B981`
+9. Rose Graphite Dark
+   - フォルダ: `09_rose-graphite-dark`
+   - 背景: `#111113`
+   - カード: `#181416`
+   - アクセント: `#FB7185`
+10. Clean Corporate Light
+    - フォルダ: `10_clean-corporate-light`
+    - 背景: `#F8FAFC`
+    - カード: `#FFFFFF`
+    - アクセント: `#2563EB`

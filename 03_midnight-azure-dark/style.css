@@ -883,25 +883,26 @@ h3 {
 
 
 /* ==========================================================
-   Theme Variant: 06 Deep Violet AI
+   Theme Variant: 03 Midnight Azure Dark
    Created from profile_20260702.zip. Color changes only.
    ========================================================== */
 :root {
-  --navy: #1E1B3A;
-  --navy-soft: #2A2350;
-  --card: #19152E;
-  --text: #F5F3FF;
-  --text-soft: #DDD6FE;
-  --white: #F5F3FF;
-  --muted: #BDB2E8;
-  --line: rgba(221, 214, 254, 0.10);
-  --accent: #A78BFA;
-  --accent-strong: #8B5CF6;
-  --accent-soft: #C4B5FD;
-  --accent-contrast: #120F24;
-  --bg: #120F24;
-  --bg-soft: #1E1B3A;
-  --shadow: 0 22px 60px rgba(18, 15, 36, 0.34);
+  --navy: #0F1F3D;
+  --navy-soft: #12284F;
+  --card: #101D39;
+  --card-soft: #13213F;
+  --text: #F8FAFC;
+  --text-soft: #C8D8F5;
+  --white: #F8FAFC;
+  --muted: #9EB4D6;
+  --line: rgba(191, 219, 254, 0.08);
+  --accent: #60A5FA;
+  --accent-strong: #2563EB;
+  --accent-soft: #93C5FD;
+  --accent-contrast: #08162E;
+  --bg: #08162E;
+  --bg-soft: #0D274D;
+  --shadow: 0 22px 60px rgba(15, 23, 42, 0.34);
 }
 
 body {
@@ -910,7 +911,7 @@ body {
 }
 
 .site-header {
-  background: rgba(30, 27, 58, 0.92);
+  background: rgba(30, 27, 75, 0.92);
   border-bottom-color: rgba(221, 214, 254, 0.10);
 }
 
@@ -922,8 +923,8 @@ body {
 .section-dark {
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(167, 139, 250, 0.22), transparent 34%),
-    linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 55%, #4C1D95 100%);
+    radial-gradient(circle at top left, rgba(129, 140, 248, 0.22), transparent 34%),
+    linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 55%, #312E81 100%);
 }
 
 .section-dark-soft {
@@ -967,11 +968,11 @@ body {
 }
 
 .terminal-card {
-  background: rgba(25, 21, 46, 0.86);
+  background: rgba(23, 23, 47, 0.86);
 }
 
 .terminal-bar {
-  background: rgba(30, 27, 58, 0.96);
+  background: rgba(30, 27, 75, 0.96);
   border-bottom-color: var(--line);
 }
 
@@ -982,7 +983,7 @@ body {
 .button.primary {
   background: var(--accent);
   color: var(--accent-contrast);
-  box-shadow: 0 14px 30px rgba(167, 139, 250, 0.28);
+  box-shadow: 0 14px 30px rgba(129, 140, 248, 0.28);
 }
 
 .button.primary:hover,
@@ -1032,6 +1033,6 @@ body {
 
 @media (max-width: 900px) {
   .global-nav {
-    background: rgba(30, 27, 58, 0.98);
+    background: rgba(30, 27, 75, 0.98);
   }
 }

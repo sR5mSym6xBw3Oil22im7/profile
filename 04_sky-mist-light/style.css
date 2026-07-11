@@ -883,25 +883,26 @@ h3 {
 
 
 /* ==========================================================
-   Theme Variant: 04 Warm Career Orange
+   Theme Variant: 04 Sky Mist Light
    Created from profile_20260702.zip. Color changes only.
    ========================================================== */
 :root {
-  --navy: #292524;
-  --navy-soft: #3A3028;
-  --card: #241F1C;
-  --text: #FFFBEB;
-  --text-soft: #FED7AA;
-  --white: #FFFBEB;
-  --muted: #D6B592;
-  --line: rgba(254, 215, 170, 0.11);
-  --accent: #F59E0B;
-  --accent-strong: #D97706;
-  --accent-soft: #FBBF24;
-  --accent-contrast: #1C1917;
-  --bg: #1C1917;
-  --bg-soft: #292524;
-  --shadow: 0 22px 60px rgba(28, 25, 23, 0.30);
+  --navy: #EAF6FB;
+  --navy-soft: #D7EEF9;
+  --card: #FFFFFF;
+  --card-soft: #F8FCFF;
+  --text: #0F172A;
+  --text-soft: #334155;
+  --white: #0F172A;
+  --muted: #475569;
+  --line: rgba(14, 165, 233, 0.10);
+  --accent: #0EA5E9;
+  --accent-strong: #0284C7;
+  --accent-soft: #7DD3FC;
+  --accent-contrast: #FFFFFF;
+  --bg: #F4F8FB;
+  --bg-soft: #E0F2FE;
+  --shadow: 0 22px 60px rgba(14, 165, 233, 0.12);
 }
 
 body {
