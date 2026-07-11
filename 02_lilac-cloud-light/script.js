@@ -3,6 +3,7 @@ root.classList.add('js-enabled');
 
 const menuButton = document.querySelector('.menu-button');
 const globalNav = document.querySelector('.global-nav');
+const logoLink = document.querySelector('.logo');
 const filterButtons = document.querySelectorAll('.filter-button');
 const skillTags = document.querySelectorAll('.skill-tag');
 const accordionCards = document.querySelectorAll('.accordion-card');
@@ -34,6 +35,13 @@ if (menuButton && globalNav) {
     if (event.key === 'Escape') {
       closeMenu();
     }
+  });
+}
+
+if (logoLink) {
+  logoLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
 
