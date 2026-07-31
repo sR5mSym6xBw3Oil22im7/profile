@@ -109,3 +109,44 @@ if ('IntersectionObserver' in window) {
 } else {
   revealElements.forEach((element) => element.classList.add('is-visible'));
 }
+
+
+// v1.4: production portfolio effects only
+(() => {
+  const cards = document.querySelectorAll('#portfolio .project-card');
+  if (!cards.length) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    cards.forEach((card) => card.classList.add('portfolio-pending'));
+    const portfolioObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove('portfolio-pending');
+        entry.target.classList.add('portfolio-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.14 });
+    cards.forEach((card) => portfolioObserver.observe(card));
+  } else {
+    cards.forEach((card) => card.classList.add('portfolio-visible'));
+  }
+
+  cards.forEach((card) => {
+    card.addEventListener('pointermove', (event) => {
+      if (event.pointerType === 'touch') return;
+      const bounds = card.getBoundingClientRect();
+      const x = ((event.clientX - bounds.left) / bounds.width) * 100;
+      const y = ((event.clientY - bounds.top) / bounds.height) * 100;
+      card.style.setProperty('--pointer-x', `${x.toFixed(1)}%`);
+      card.style.setProperty('--pointer-y', `${y.toFixed(1)}%`);
+    }, { passive: true });
+
+    card.addEventListener('pointerleave', () => {
+      card.style.removeProperty('--pointer-x');
+      card.style.removeProperty('--pointer-y');
+    });
+  });
+})();
+

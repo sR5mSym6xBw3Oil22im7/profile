@@ -1,97 +1,65 @@
-# YAMANAKA YUJI Portfolio
+# YAMANAKA YUJI ポートフォリオ
 
-このリポジトリは、面接時の自己紹介を想定した HTML / CSS / JavaScript のポートフォリオサイトです。
+山中裕次の自己紹介・職務経歴を紹介するポートフォリオサイトです。アプリケーション開発、インフラ構築、運用保守の経験と、現在学習しているAI・Web制作についてまとめています。
 
-ルートの [index.html](./index.html) を開くと、10 種類のテーマ一覧を確認できます。  
-各テーマは個別フォルダに分かれており、背景・カード・アクセントの 3 色を切り替える構成です。
+## サイトの確認
 
-## 構成
+ビルドツールや外部サーバーを必要としない静的サイトです。リポジトリのルートにある [index.html](./index.html) をブラウザで開くと確認できます。
 
-- `index.html`：サイト本体
-- `style.css`：デザインとレスポンシブ対応
-- `script.js`：メニュー、スキルフィルター、カード開閉、スクロールアニメーション
+ローカルサーバーを使う場合は、リポジトリのルートで次のように起動してください。
 
-## 更新内容
+```bash
+python3 -m http.server 8000
+```
 
-- `Career Summary` の文言を「Web開発を通じて生成AIに関する知識を身につけ、実務経験と組み合わせた新たなキャリアを目指す。」に更新しました。
-- README を日本語で整理し、確認方法とテーマ一覧を分かりやすくしました。
+起動後、`http://localhost:8000/` を開きます。
 
-## 確認方法
+## 主な内容
 
-1. ルートの [index.html](./index.html) を開く
-2. 各フォルダ内の [index.html](./01_deep-violet-ai/index.html) などを開く
+- 自己紹介・キャリア概要
+- アプリケーション開発、サーバー構築、運用保守の経験
+- 使用経験のある言語・OS・ミドルウェアなどのスキル
+- AI × Web制作の学習内容
+- 制作物・デモへのリンク
+- レスポンシブ対応のテーマデザイン
 
-## テーマ一覧
+## ファイル構成
 
-1. Deep Violet AI
-   - フォルダ: `01_deep-violet-ai`
-   - 背景: `#120F24`
-   - カード: `#19152E`
-   - アクセント: `#A78BFA`
-2. Lilac Cloud Light
-   - フォルダ: `02_lilac-cloud-light`
-   - 背景: `#F7F4FF`
-   - カード: `#FFFFFF`
-   - アクセント: `#7C3AED`
-3. Midnight Azure Dark
-   - フォルダ: `03_midnight-azure-dark`
-   - 背景: `#08162E`
-   - カード: `#101D39`
-   - アクセント: `#60A5FA`
-4. Sky Mist Light
-   - フォルダ: `04_sky-mist-light`
-   - 背景: `#F4F8FB`
-   - カード: `#FFFFFF`
-   - アクセント: `#0EA5E9`
-5. Graphite Night
-   - フォルダ: `05_graphite-night`
-   - 背景: `#111111`
-   - カード: `#1C1C1C`
-   - アクセント: `#A855F7`
-6. Warm Canvas Light
-   - フォルダ: `06_warm-canvas-light`
-   - 背景: `#FFF8F1`
-   - カード: `#FFFFFF`
-   - アクセント: `#F97316`
-7. Forest Mint Dark
-   - フォルダ: `07_forest-mint-dark`
-   - 背景: `#10211C`
-   - カード: `#183028`
-   - アクセント: `#22C55E`
-8. Aqua Breeze Light
-   - フォルダ: `08_aqua-breeze-light`
-   - 背景: `#F7FAF7`
-   - カード: `#FFFFFF`
-   - アクセント: `#10B981`
-9. Rose Graphite Dark
-   - フォルダ: `09_rose-graphite-dark`
-   - 背景: `#111113`
-   - カード: `#181416`
-   - アクセント: `#FB7185`
-10. Clean Corporate Light
-    - フォルダ: `10_clean-corporate-light`
-    - 背景: `#F8FAFC`
-    - カード: `#FFFFFF`
-    - アクセント: `#2563EB`
+```text
+.
+├── index.html       # ポートフォリオ本体
+├── css/
+│   └── style.css    # デザイン、レイアウト、レスポンシブ対応
+├── js/
+│   └── script.js    # メニュー、フィルター、開閉、スクロール演出
+└── img/             # サイトで使用する画像
+```
 
-## 公開前に確認すること
-
-1. `index.html` の GitHub リンクを、自分の GitHub プロフィール URL またはリポジトリ URL に変更する
-2. 必要に応じて、Contact 欄にメールアドレスを追加する
-3. 住所、電話番号、生年月日、顔写真などの個人情報は公開用として掲載しない
-
-## GitHub Pages で公開する手順
-
-1. GitHub で新しいリポジトリを作成する
-2. このフォルダ内の `index.html`、`style.css`、`script.js`、`README.md` をアップロードする
-3. リポジトリの `Settings` を開く
-4. `Pages` を開く
-5. `Build and deployment` の `Source` を `Deploy from a branch` にする
-6. `Branch` を `main`、フォルダを `/root` にして保存する
-7. 表示された URL を開いて確認する
+`.history/` は過去の作業履歴を保存するためのローカルフォルダで、Gitのコミット対象外です。
 
 ## 使用技術
 
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3
+- JavaScript（Vanilla JS）
+- Google Fonts（Noto Sans JP）
+
+## 公開前の確認事項
+
+1. `index.html` 内のGitHubリンクを、公開するプロフィールまたはリポジトリのURLに変更する
+2. Contact欄を公開する場合は、掲載する連絡先を確認する
+3. 住所、電話番号、生年月日、顔写真など、不要な個人情報が含まれていないことを確認する
+4. PC・スマートフォンの両方で表示とリンクを確認する
+
+## GitHub Pagesで公開する
+
+1. GitHubでリポジトリを作成する
+2. このプロジェクトをリポジトリへプッシュする
+3. リポジトリの `Settings` → `Pages` を開く
+4. `Build and deployment` のソースで `Deploy from a branch` を選択する
+5. ブランチに `main`、フォルダに `/ (root)` を指定して保存する
+6. 表示されたURLにアクセスして公開状態を確認する
+
+## ライセンス
+
+個人ポートフォリオ用途のサイトです。内容や画像を利用する場合は、必要に応じて作者へ確認してください。
