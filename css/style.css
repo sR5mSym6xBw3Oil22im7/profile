@@ -1375,7 +1375,6 @@ body {
 }
 
 .js-enabled #portfolio .project-card.portfolio-pending {
-  opacity: 0;
   transform: translateY(calc(var(--portfolio-offset) + 22px));
 }
 
