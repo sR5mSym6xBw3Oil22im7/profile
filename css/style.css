@@ -1466,3 +1466,10 @@ body {
 #portfolio .project-card--calculator .project-visual {
   aspect-ratio: 1264 / 940;
 }
+
+#portfolio .project-card--calculator .calculator-demo-capture,
+#portfolio .project-card--calculator:hover .calculator-demo-capture {
+  object-fit: contain;
+  transform: none;
+  filter: none;
+}
