@@ -1461,3 +1461,8 @@ body {
 #portfolio .project-grid {
   grid-template-columns: minmax(0, 1fr);
 }
+
+/* Keep the complete calculator capture visible at its native landscape ratio. */
+#portfolio .project-card--calculator .project-visual {
+  aspect-ratio: 1264 / 940;
+}
