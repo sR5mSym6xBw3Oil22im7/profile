@@ -1245,6 +1245,7 @@ body {
 #portfolio .project-card--sakura { --project-accent: #c88a8f; }
 #portfolio .project-card--calculator { --project-accent: #4e9fc0; }
 #portfolio .project-card--dungeon { --project-accent: #6e9a78; }
+#portfolio .project-card--receipt { --project-accent: #c9a24a; }
 
 #portfolio .project-card::before {
   content: "";

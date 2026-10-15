@@ -218,6 +218,8 @@
           <span class="skill-tag" data-category="web">JavaScript</span>
           <span class="skill-tag" data-category="web">AI活用</span>
           <span class="skill-tag" data-category="web">MCP / Agent領域への関心</span>
+          <span class="skill-tag" data-category="middleware">PostgreSQL</span>
+          <span class="skill-tag" data-category="programming">Spring Boot</span>
         </div>
       </div>
     </section>
@@ -281,16 +283,19 @@
         </div>
         <div class="learning-card reveal">
           <p>
-            現在、職業訓練校にて、生成AIを活用したWebアプリ作成を学習しています。Visual Studio CodeやCodexを活用しながら、HTML、CSS、JavaScriptによるフロントエンドと、Java 21、Spring Boot、MavenによるREST API開発に取り組んでいます。さらに、Web Speech APIを利用した日本語の音声操作、H2 Databaseを用いたデータ保存、Gemini APIとMCPを組み合わせたAIチャット、Docker、GitHub Pages、Render Web Servicesを利用した公開・実行環境についても理解を深めています。
+            現在、職業訓練校にて、生成AIを活用したWebアプリ作成を学習しています。Visual Studio Code、Codex、Claude Codeを活用しながら、HTML、CSS、JavaScriptによるフロントエンドと、Java 21、Spring Boot、MavenによるREST API開発に取り組んでいます。さらに、Web Speech APIを利用した日本語の音声操作、H2 Databaseを用いたデータ保存、Gemini APIとMCPを組み合わせたAIチャット、Docker、GitHub Pages、Render Web Servicesを利用した公開・実行環境についても理解を深めています。
           </p>
           <ul class="check-list">
             <li>自己紹介ポートフォリオのHTML/CSS/JavaScript実装</li>
             <li>GitHub Pagesでの公開を想定したファイル構成</li>
             <li>スキル切り替え、カード開閉、スクロール表示などのJavaScript機能</li>
-            <li>Visual Studio Code / Codex を活用した開発作業</li>
+            <li>Visual Studio Code / Codex / Claude Code を活用した開発作業</li>
+            <li>AI（Claude Opus）と相談しながら、紹介動画の企画から制作までを実施</li>
             <li>Java 21 / Spring Boot / Maven によるREST API・入力バリデーション実装</li>
             <li>H2 Database / Gemini API / MCP を用いた注文履歴・AIチャット連携</li>
             <li>GitHub Pages / Render Web Services / Docker を利用した公開・実行環境構築</li>
+            <li>Spring Security による認可・CSRF対策・ログイン失敗ロックの実装</li>
+            <li>PostgreSQL / JUnit 5 / node:test を用いたDB連携とテスト自動化</li>
           </ul>
         </div>
       </div>
@@ -305,6 +310,22 @@
         </div>
 
         <div class="project-grid">
+          <article class="project-card project-card--receipt">
+            <figure class="project-visual">
+              <img src="img/projects/receipt-game.png" alt="モンスターレシート対戦デモサイトのスクリーンショット" width="1440" height="810" loading="lazy" decoding="async">
+              <figcaption>デモ画面</figcaption>
+            </figure>
+            <h3>モンスターレシート対戦</h3>
+            <p>買い物のレシートを、遊べるモンスターカードに変えるWebゲームです。レシート画像をGemini APIで解析し、内容を確認してからPostgreSQLに保存します。同じレシートからは必ず同じ能力値のカードが生まれ、ログイン不要のルームコード対戦（90秒で相手が来なければコンピューター戦）を楽しめます。勝敗はサーバーで計算し、AIが使えないときは計算式に自動で切り替えます。遊び方の解説動画やPR動画も、AI（Claude Opus）と相談しながら、企画から制作まで行いました。</p>
+            <p class="meta">生成AI（Claude Code）を活用し、企画から設計・実装・テスト・公開・開発文書34点の作成まで一人で取り組んだ卒業ポートフォリオ</p>
+            <p class="project-tech project-tech--long">HTML / CSS / JavaScript / Java 21 / Spring Boot / Spring Security / REST API / PostgreSQL / H2 Database / Gemini API / JUnit 5 / Docker / Maven / GitHub Pages / Render / 動画制作</p>
+            <p class="project-links">
+              <a href="https://sr5msym6xbw3oil22im7.github.io/receipt-game/reFront/index.html" target="_blank" rel="noopener noreferrer">デモを見る</a><br>
+              <a href="https://sr5msym6xbw3oil22im7.github.io/receipt-game/doc/" target="_blank" rel="noopener noreferrer">ドキュメントを見る</a><br>
+              <a href="https://github.com/sR5mSym6xBw3Oil22im7/receipt-game.git" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+            </p>
+          </article>
+
           <article class="project-card project-card--sakura">
             <figure class="project-visual">
               <img src="img/projects/shogun-sakura-gift.png" alt="Shogun Sakura Giftデモサイトのスクリーンショット" width="1440" height="810" loading="lazy" decoding="async">
@@ -312,7 +333,7 @@
             </figure>
             <h3>Shogun Sakura Gift</h3>
             <p>桜の押し花と「将軍」の扇を組み合わせた和風ギフトのデモECサイトです。商品紹介、注文入力・確認・完了、注文履歴に加え、Spring Boot REST API、H2データベース、サイト本文を根拠に回答するAIチャットを実装しています。</p>
-            <p class="meta">生成AIとノーコードを活用して制作したWebアプリケーション</p>
+            <p class="meta">生成AI（Codex）とノーコードを活用して制作したWebアプリケーション</p>
             <p class="project-tech project-tech--long">HTML / CSS / JavaScript / Java 21 / Spring Boot / REST API / H2 Database / Gemini API / MCP / Docker / Maven / GitHub Pages / Render</p>
             <p class="project-links">
               <a href="https://sr5msym6xbw3oil22im7.github.io/shogun-sakura-demo/frontend/" target="_blank" rel="noopener noreferrer">デモを見る</a><br>
