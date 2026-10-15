@@ -1483,3 +1483,8 @@ body {
   transform: none;
   filter: none;
 }
+
+/* Show the whole Monster Receipt Battle capture (621 x 559) centered in the frame instead of cropping it. */
+#portfolio .project-card--receipt .project-visual img {
+  object-fit: contain;
+}
