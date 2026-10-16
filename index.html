@@ -315,8 +315,14 @@
         <div class="project-grid">
           <article class="project-card project-card--receipt">
             <figure class="project-visual">
-              <img src="img/projects/receipt-game.png" alt="モンスターレシート対戦デモサイトのスクリーンショット" width="621" height="559" loading="lazy" decoding="async">
-              <figcaption>デモ画面</figcaption>
+              <video class="demo-video" width="1920" height="1080"
+                     poster="img/projects/receipt-game-poster.jpg"
+                     muted loop playsinline preload="none" tabindex="-1"
+                     aria-label="モンスターレシート対戦のデモ動画（約23秒・音声なし）">
+                <source src="video/receipt-game.mp4" type="video/mp4">
+                <source src="video/receipt-game.webm" type="video/webm">
+              </video>
+              <figcaption>デモ動画</figcaption>
             </figure>
             <h3>モンスターレシート対戦</h3>
             <p>買い物のレシートを、遊べるモンスターカードに変えるWebゲームです。レシート画像をGemini APIで解析し、内容を確認してからPostgreSQLに保存します。同じレシートからは必ず同じ能力値のカードが生まれ、ログイン不要のルームコード対戦（90秒で相手が来なければコンピューター戦）を楽しめます。勝敗はサーバーで計算し、AIが使えないときは計算式に自動で切り替えます。遊び方の解説動画やPR動画も、AI（Claude Opus）と相談しながら、企画から制作まで行いました。</p>
@@ -331,8 +337,14 @@
 
           <article class="project-card project-card--sakura">
             <figure class="project-visual">
-              <img src="img/projects/shogun-sakura-gift.png" alt="Shogun Sakura Giftデモサイトのスクリーンショット" width="1440" height="810" loading="lazy" decoding="async">
-              <figcaption>デモ画面</figcaption>
+              <video class="demo-video" width="1920" height="870"
+                     poster="img/projects/shogun-sakura-gift-poster.jpg"
+                     muted loop playsinline preload="none" tabindex="-1"
+                     aria-label="Shogun Sakura Giftのデモ動画（約24秒・音声なし）">
+                <source src="video/shogun-sakura-gift.mp4" type="video/mp4">
+                <source src="video/shogun-sakura-gift.webm" type="video/webm">
+              </video>
+              <figcaption>デモ動画</figcaption>
             </figure>
             <h3>Shogun Sakura Gift</h3>
             <p>桜の押し花と「将軍」の扇を組み合わせた和風ギフトのデモECサイトです。商品紹介、注文入力・確認・完了、注文履歴に加え、Spring Boot REST API、H2データベース、サイト本文を根拠に回答するAIチャットを実装しています。</p>
@@ -346,9 +358,15 @@
           </article>
 
           <article class="project-card project-card--calculator">
-            <figure class="project-visual project-visual--calculator" aria-label="電卓デモ画面">
-              <img class="calculator-demo-capture" src="img/projects/calculator-capture.png?v=20260913-3" alt="電卓デモサイトの画像キャプチャ" width="1264" height="940" loading="eager" decoding="async">
-              <figcaption class="demo-screen-badge">デモ画面</figcaption>
+            <figure class="project-visual project-visual--calculator" aria-label="電卓デモ動画">
+              <video class="demo-video" width="1264" height="940"
+                     poster="img/projects/calculator-poster.jpg"
+                     muted loop playsinline preload="none" tabindex="-1"
+                     aria-label="電卓のデモ動画（約20秒・音声なし。音声入力の説明つき）">
+                <source src="video/calculator.mp4" type="video/mp4">
+                <source src="video/calculator.webm" type="video/webm">
+              </video>
+              <figcaption class="demo-screen-badge">デモ動画</figcaption>
             </figure>
             <h3>電卓</h3>
             <p>シンプルで使いやすい電卓アプリです。GPT-5.6を開発支援に活用し、画面設計、機能実装、動作確認を行いました。四則演算、%・AC・DEL・小数点入力、キーボード操作に加え、Web Speech APIを利用した日本語の音声操作に対応し、「12たす3イコール」のような発話でも計算できます。計算実行時には花火とコンフェッティの演出を表示します。</p>
@@ -363,8 +381,14 @@
 
           <article class="project-card project-card--dungeon">
             <figure class="project-visual">
-              <img src="img/projects/3d-dungeon.png" alt="3Dダンジョンデモサイトのスクリーンショット" width="1440" height="810" loading="lazy" decoding="async">
-              <figcaption>デモ画面</figcaption>
+              <video class="demo-video" width="1920" height="1080"
+                     poster="img/projects/3d-dungeon-poster.jpg"
+                     muted loop playsinline preload="none" tabindex="-1"
+                     aria-label="3Dダンジョンのデモ動画（約24秒・音声なし）">
+                <source src="video/3d-dungeon.mp4" type="video/mp4">
+                <source src="video/3d-dungeon.webm" type="video/webm">
+              </video>
+              <figcaption>デモ動画</figcaption>
             </figure>
             <h3>3Dダンジョン</h3>
             <p>HTML、CSS、JavaScriptだけで動作するブラウザ向けの3DダンジョンRPGです。1人称視点のダンジョン移動、2Dミニマップ、ゴブリンとのランダムエンカウント、戦闘ログとステータス表示、装備による自動回復ギミックを実装しています。</p>

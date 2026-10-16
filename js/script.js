@@ -150,3 +150,19 @@ if ('IntersectionObserver' in window) {
   });
 })();
 
+
+/* Demo videos: autoplay (muted, loop) only while visible; poster + controls for reduced motion. */
+(() => {
+  const videos = document.querySelectorAll('#portfolio video.demo-video');
+  if (!videos.length) return;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) {
+    videos.forEach(v => { v.controls = true; v.preload = 'metadata'; });
+    return;
+  }
+  const io = new IntersectionObserver(entries => entries.forEach(({ target: v, isIntersecting }) => {
+    if (isIntersecting) { v.preload = 'auto'; v.play().catch(() => { v.controls = true; }); }
+    else v.pause();
+  }), { threshold: 0.5 });
+  videos.forEach(v => io.observe(v));
+})();
